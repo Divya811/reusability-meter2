@@ -13,12 +13,12 @@ const ExampleToast = ({ children }) => {
   return (
     <>
       {!show && <Button onClick={() => toggleShow(true)}>Show Toast</Button>}
-      <Toast show={show} onClose={() => toggleShow(false)}>
+      <Sample show={show} onClose={() => toggleShow(false)}>
         <Toast.Header>
           <strong className="mr-auto">React-Bootstrap Demo</strong>
         </Toast.Header>
         <Toast.Body>{children}</Toast.Body>
-      </Toast>
+      </Sample>
     </>
   );
 };
@@ -27,10 +27,9 @@ const App = () => (
   <Container className="p-3">
     <Jumbotron>
       <h1 className="header">Demonstration Of React Bootstrap</h1>
-      <ExampleToast>
-        Click Here!
-        
-      </ExampleToast>
+      <BarCodeScanner>
+       
+      </BarCodeScanner>
     </Jumbotron>
   </Container>
 );
